@@ -7,6 +7,8 @@
 //============================================================================
 
 #include <iostream>
+#include "HandleArray.h"
+
 using namespace std;
 
 int main(int argc, char* argv[]) {
@@ -21,6 +23,9 @@ int main(int argc, char* argv[]) {
 	for(int i=0; i<argc; ++i){
 		std::cout<<"ith parameter: "<<argv[i]<<std::endl;
 	}
+
+	HandleArray handleArray(arr1,sizeof(arr1)/sizeof(arr1[0]));
+	handleArray.Sort();
 
 	return 0;
 }

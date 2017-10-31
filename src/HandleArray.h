@@ -10,9 +10,10 @@
 
 class HandleArray{
 private:
-	int _Array[10];
+	int *_Array;
 	unsigned int _No;
 public:
+	HandleArray(int iArr[], unsigned int size);
 	void Sort();
 };
 

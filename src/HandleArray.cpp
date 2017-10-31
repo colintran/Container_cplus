@@ -8,6 +8,11 @@
 #include <iostream>
 #include <vector>
 
+HandleArray::HandleArray(int iArr[], unsigned int size){
+	this->_Array = iArr;
+	this->_No = size;
+}
+
 void HandleArray::Sort(){
 	std::vector<int> aList;
 	aList = std::vector<int>(_Array, _Array + _No);
